@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>流光倾泻之誓 | 查理苏生日惊喜</title>
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <div id="app">
+        <section id="scene-start" class="scene active">
+            <div class="background" style="background-image: url('images/bg-start.jpg')"></div>
+            <div class="overlay"></div>
+            <div class="start-container">
+                <h1 class="game-title">流光倾泻之誓</h1>
+                <p class="game-subtitle">Rui's Birthday Surprise</p>
+                <button id="btn-open-gift" class="interactive-btn">
+                    <span class="icon">🎁</span> 开始邂逅
+                </button>
+            </div>
+        </section>
+        <section id="scene-author" class="scene">
+            <div class="background" style="background-image: url('images/bg-letter.jpg')"></div>  
+            <div class="author-box">
+                <img src="images/sticker-rui.png" class="sticker sticker-left">
+                <img src="images/sticker-charlie.png" class="sticker sticker-right">
+                <div class="author-title">To Rui:</div>
+                <div class="author-content text-typewriter">
+                    <p
+                        style="font-size: 1.8em; font-weight: bold; color: #d4af37; margin-bottom: 15px; text-shadow: 0 2px 4px rgba(212,175,55,0.2);">
+                        生日快乐！</p>
+                    <p>虽然不能把真正的查理苏绑来送给你，</p>
+                    <p>但我为你准备了这场只属于你的特别邂逅。</p>
+                    <p>愿你在光启市的星空下，</p>
+                    <p>收获这份独一无二的浪漫。</p>
+                    <br>
+                </div>
+                <button class="option-btn center-btn" data-next="scene-intro">正式开始</button>
+            </div>
+        </section>
+        <section id="scene-intro" class="scene">
+            <div class="background" style="background-image: url('images/bg-night.jpg')"></div>
+            <div class="character"><img src="images/charlie-normal.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">透过玻璃的倒影，我已经看见你了，我的未婚妻。今晚的星光似乎格外偏爱这座城市，就像我始终偏爱着你。</p>
+                        <p class="type-text">在为你点燃生日烛火前，我有个小小的问题——此刻站在你面前的我，与窗外这片星光，哪个更让你心动？</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="resp-intro-1">
+                        <span class="opt-icon">✧</span> 当然是你...不过这话可不能让你太得意
+                    </button>
+                    <button class="option-btn" data-next="resp-intro-2">
+                        <span class="opt-icon">✧</span> 星光再美，也比不上你眼中的光芒
+                    </button>
+                    <button class="option-btn" data-next="resp-intro-3">
+                        <span class="opt-icon">✧</span> 这种问题...果然很符合查理苏的风格
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="resp-intro-1" class="scene">
+            <div class="background" style="background-image: url('images/bg-night.jpg')"></div>
+            <div class="character"><img src="images/charlie-normal.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">呵...你的诚实总是让我如此愉悦。（指尖轻触胸口）</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="scene-branch-select"><span class="opt-icon">✧</span>
+                        继续</button>
+                </div>
+            </div>
+        </section>
+        <section id="resp-intro-2" class="scene">
+            <div class="background" style="background-image: url('images/bg-night.jpg')"></div>
+            <div class="character"><img src="images/charlie-normal.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">（微微一怔，随即轻笑）这句话，我要录下来每天循环播放。</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="scene-branch-select"><span class="opt-icon">✧</span>
+                        继续</button>
+                </div>
+            </div>
+        </section>
+        <section id="resp-intro-3" class="scene">
+            <div class="background" style="background-image: url('images/bg-night.jpg')"></div>
+            <div class="character"><img src="images/charlie-normal.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">因为我是查理苏，是独一无二的，你的未婚夫。</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="scene-branch-select"><span class="opt-icon">✧</span>
+                        继续</button>
+                </div>
+            </div>
+        </section>
+        <section id="scene-branch-select" class="scene">
+            <div class="background" style="background-image: url('images/bg-night.jpg')"></div>
+            <div class="character"><img src="images/charlie-normal.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">那么，告诉我——你希望如何开启这个特别的夜晚？</p>
+                        <p class="type-text">是选择这场能让整座光启市为之侧目的盛大告白，还是只属于我们二人的，温暖如春日晨光的约定？</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="scene-grand-start">
+                        <span class="opt-icon">✧</span> 我想体验让整座城市都见证的浪漫
+                    </button>
+                    <button class="option-btn" data-next="scene-warm-start">
+                        <span class="opt-icon">✧</span> 我更想要一个只属于我们两个人的温馨时刻
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="scene-grand-start" class="scene">
+            <div class="background" style="background-image: url('images/bg-rooftop.jpg')"></div>
+            <div class="character"><img src="images/charlie-normal.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">果然是我的未婚妻。看，我为你准备了整个光启市的灯火作陪衬。</p>
+                        <p class="type-text">不过...最精彩的环节，需要你与我共同完成这个“奇迹”。</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="scene-cake-event"><span class="opt-icon">✧</span>
+                        前往天台中央</button>
+                </div>
+            </div>
+        </section>
+        <section id="scene-cake-event" class="scene">
+            <div class="background" style="background-image: url('images/bg-rooftop.jpg')"></div>
+            <div class="character"><img src="images/charlie-smile.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="prop-center2">
+                        <img src="images/prop-cake2.png" class="floating-cake">
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">我特意请教了法国甜点大师，想要复刻凡尔赛宫最完美的浮雕...未婚妻，你觉得我们该如何对待这位“有个性”的杰作？</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="resp-cake-1">
+                        <span class="opt-icon">✧</span> 真诚赞赏：现在的它已经很完美了，就像你一样
+                    </button>
+                    <button class="option-btn" data-next="resp-cake-2">
+                        <span class="opt-icon">✧</span> 共同创作：让我们一起为它添上最后的点睛之笔
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="resp-cake-1" class="scene">
+            <div class="background" style="background-image: url('images/bg-rooftop.jpg')"></div>
+            <div class="character"><img src="images/charlie-smile.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">果然，只有你最懂欣赏。来，让我们分享这份独一无二。记住，这是查理苏特制的，仅此一份的生日祝福。</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="scene-birthday-cake"><span class="opt-icon">✧</span> 继续</button>
+                </div>
+            </div>
+        </section>
+        <section id="resp-cake-2" class="scene">
+            <div class="background" style="background-image: url('images/bg-rooftop.jpg')"></div>
+            <div class="character"><img src="images/charlie-smile.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">妙极了！这一定是史上最完美的合作，就像我们的相遇，是命运最精妙的安排。</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="scene-birthday-cake"><span class="opt-icon">✧</span> 继续</button>
+                </div>
+            </div>
+        </section>
+        <section id="scene-warm-start" class="scene">
+            <div class="background" style="background-image: url('images/bg-apartment.jpg')"></div>
+            <div class="character"><img src="images/charlie-normal.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">正合我意。我推掉了今晚所有行程，包括一场晚宴。知道吗？比起那些应酬，与你共度的时光才最珍贵。</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="scene-kitchen-event"><span class="opt-icon">✧</span>
+                        走向厨房</button>
+                </div>
+            </div>
+        </section>
+        <section id="scene-kitchen-event" class="scene">
+            <div class="background" style="background-image: url('images/bg-kitchen.jpg')"></div>
+            <div class="character"><img src="images/charlie-normal.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">原本计划的餐厅主厨去采风了...不过这样也好，让我有机会为你展示另一个“版本”的查理苏。</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="resp-kitchen-1">
+                        <span class="opt-icon">✧</span> 坚持计划：我相信你的选择，无论如何都值得期待
+                    </button>
+                    <button class="option-btn" data-next="resp-kitchen-2">
+                        <span class="opt-icon">✧</span> 随遇而安：和你一起下厨的过程，本身就是最棒的礼物
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="resp-kitchen-1" class="scene">
+            <div class="background" style="background-image: url('images/bg-kitchen.jpg')"></div>
+            <div class="character"><img src="images/charlie-normal.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">得此信任，我必不负所望！让我为你展示，什么叫“被医术耽误的天才主厨”。</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="scene-birthday-cake"><span class="opt-icon">✧</span> 继续</button>
+                </div>
+            </div>
+        </section>
+        <section id="resp-kitchen-2" class="scene">
+            <div class="background" style="background-image: url('images/bg-kitchen.jpg')"></div>
+            <div class="character"><img src="images/charlie-normal.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">你说得对，重要的不是料理本身，而是与你共度的时光。来，让我们创造只属于我们的独家配方。</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="scene-birthday-cake"><span class="opt-icon">✧</span> 继续</button>
+                </div>
+            </div>
+        </section>
+        <section id="scene-birthday-cake" class="scene">
+            <div class="background" style="background-image: url('images/bg-rooftop-stars2.png')"></div>
+            <div class="prop-center">
+                <img src="images/prop-cake.png" class="floating-cake">
+            </div>
+        
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span></div>
+                    <div class="text-container">
+                        <p class="type-text">未婚妻，21岁可是个特别的里程碑。这可是我亲自把关设计的蛋糕，代表着你如花般绽放的年纪。</p>
+                        <p class="type-text">现在，闭上眼，在这片星空下许下你的愿望。我会替你守护它，直到实现。</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="scene-eat-cake">
+                        <span class="opt-icon">🕯️</span> 闭眼许愿，吹灭蜡烛
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="scene-eat-cake" class="scene">
+            <div class="background" style="background-image: url('images/bg-rooftop-stars2.png')"></div>
+            <div class="character">
+                <img src="images/cg-feeding.png" class="char-img" style="transform: scale(1);">
+            </div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span></div>
+                    <div class="text-container">
+                        <p class="type-text">愿望许好了？那么...这第一口甜蜜，理应由你的未婚夫亲自为你呈上。</p>
+                        <p class="type-text">来，张嘴——啊——（眼神温柔地注视着你）</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="scene-pre-final">
+                        <span class="opt-icon">🍰</span> 啊——（吃掉蛋糕）
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="scene-pre-final" class="scene">
+            <div class="background" style="background-image: url('images/bg-rooftop-stars2.png')"></div>
+            <div class="character"><img src="images/charlie-romantic.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">（执起你的手）经历了这些，我更加确信...与你在一起的每个瞬间，都是我生命中最珍贵的记忆。</p>
+                        <p class="type-text">现在...你希望我们以怎样的方式，为这个特别的日子烙下永恒的印记？</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="scene-final-gift">
+                        <span class="opt-icon">✧</span> 惊喜献礼：我想收到你准备的生日礼物
+                    </button>
+                    <button class="option-btn" data-next="scene-final-promise">
+                        <span class="opt-icon">✧</span> 灵魂之约：我想和你许下关于未来的约定
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="scene-final-gift" class="scene">
+            <div class="background" style="background-image: url('images/bg-rooftop-stars2.png')"></div>
+            <div class="character"><img src="images/charlie-romantic.png" class="char-img"></div>
+            <div class="prop-center">
+                <img src="images/prop-gift.png" class="gift-pop">
+            </div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span></div>
+                    <div class="text-container">
+                        <p class="type-text">早就准备好了。（取出镶嵌着紫水晶的礼盒）这份礼物，我寻遍了世界各地。每一个细节都经过精心考量...就像我对你的心意，经得起时光打磨。</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="scene-blessing"><span class="opt-icon">🎁</span> 收下礼物</button>
+                </div>
+            </div>
+        </section>
+        <section id="scene-final-promise" class="scene">
+            <div class="background" style="background-image: url('images/bg-rooftop-stars2.png')"></div>
+            <div class="character"><img src="images/charlie-romantic.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">这正是我想说的。我与你约定——往后的每一个日出日落，都要见证你的笑容。这是我以查理苏之名立下的誓言，以光启市的星空为证。</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="scene-blessing"><span class="opt-icon">✧</span> 许下誓言</button>
+                </div>
+            </div>
+        </section>
+        <section id="scene-blessing" class="scene">
+            <div class="background" style="background-image: url('images/bg-rooftop-stars2.png')"></div>
+            <div class="character"><img src="images/charlie-romantic.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">生日快乐，我的未婚妻。曾经我以为，完美是此生唯一的追求。直到遇见你...我才明白，真正的完美，是能找到那个让你甘愿展示所有不完美的人。</p>
+                        <p class="type-text">愿你的新岁，每一天都如今天的你一般——璀璨、明媚、充满无限可能。</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="resp-end-1"><span class="opt-icon">✧</span>
+                        谢谢你，这是我收到过最用心的礼物</button>
+                    <button class="option-btn" data-next="resp-end-2"><span class="opt-icon">✧</span>
+                        明年的今天，我们还要一起看流星雨</button>
+                    <button class="option-btn" data-next="resp-end-3"><span class="opt-icon">✧</span>
+                        查理苏，我真的很幸福</button>
+                </div>
+            </div>
+        </section>
+        <section id="resp-end-1" class="scene">
+            <div class="background" style="background-image: url('images/bg-rooftop-stars2.png')"></div>
+            <div class="character"><img src="images/charlie-romantic.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">你的笑容，就是对我最好的回礼。</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="scene-goodnight"><span class="opt-icon">✧</span> 晚安</button>
+                </div>
+            </div>
+        </section>
+        <section id="resp-end-2" class="scene">
+            <div class="background" style="background-image: url('images/bg-rooftop-stars2.png')"></div>
+            <div class="character"><img src="images/charlie-romantic.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">不止明年，往后每一个有流星划过的夜晚，我都会陪在你身边。</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="scene-goodnight"><span class="opt-icon">✧</span> 晚安</button>
+                </div>
+            </div>
+        </section>
+        <section id="resp-end-3" class="scene">
+            <div class="background" style="background-image: url('images/bg-rooftop-stars2.png')"></div>
+            <div class="character"><img src="images/charlie-romantic.png" class="char-img"></div>
+            <div class="ui-layer">
+                <div class="dialog-box">
+                    <div class="name-tag"><span class="diamond">✦</span> 查理苏 <span class="sub-name">/ Charlie</span>
+                    </div>
+                    <div class="text-container">
+                        <p class="type-text">能给你幸福，就是我最大的心愿。</p>
+                    </div>
+                </div>
+                <div class="options-container">
+                    <button class="option-btn" data-next="scene-goodnight"><span class="opt-icon">✧</span> 晚安</button>
+                </div>
+            </div>
+        </section>
+        <section id="scene-goodnight" class="scene">
+            <div class="background" style="background-image: url('images/bg-ending.jpg')"></div>
+            <div class="ending-content">
+                <h1>晚安，我的未婚妻</h1>
+                <div class="ending-text">
+                    <p>“愿你的梦境，比星光更美。”</p>
+                    <p class="signature">—— 查理苏</p>
+                </div>
+                <div class="ending-options">
+                    <button class="option-btn" onclick="location.reload()">重温今晚的回忆</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <audio id="bgm" loop>
+        <source src="audio/bgm.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        document.getElementById('bgm').volume = 0.2;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
